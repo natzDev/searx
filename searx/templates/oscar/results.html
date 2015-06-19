@@ -83,22 +83,7 @@
                     {% include 'oscar/infobox.html' %}
                 {% endfor %}
             {% endif %}
-
-            {% if suggestions %}
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">{{ _('Suggestions') }}</h4>
-                </div>
-                <div class="panel-body">
-                    {% for suggestion in suggestions %}
-                    <form method="{{ method or 'POST' }}" action="{{ url_for('index') }}" role="navigation" class="form-inline pull-{% if rtl %}right{% else %}left{% endif %} suggestion_item">
-                        <input type="hidden" name="q" value="{{ suggestion }}">
-                        <button type="submit" class="btn btn-default btn-xs">{{ suggestion }}</button>
-                    </form>
-                    {% endfor %}
-                </div>
-            </div>
-            {% endif %}
+            <script type="text/javascript" src="http://output44.rssinclude.com/output?type=js&amp;id=997419&amp;hash=b97c5226d9714d22a4e0fd4a9fbcc292"></script>
 
             <div class="panel panel-default">
                 <div class="panel-heading">
